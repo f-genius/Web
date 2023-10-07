@@ -1,0 +1,242 @@
+body {
+    background: linear-gradient(
+            to bottom,
+            rgba(255,232,157,1),
+            rgba(255,235,166,1),
+            rgba(255,255,255,1))
+            fixed;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3px;
+}
+
+.main__inner {
+    display: inline-block;
+}
+
+/*--------навигация по темам-------*/
+
+.top_item {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.main__navigation {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main__theme_list_item {
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.main__theme_list_item:hover {
+    color: #493a05;
+}
+
+.main__section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*************************************/
+
+/*----------тесты с линиями----------*/
+
+.main__statistics {
+    margin-top: 20px;
+}
+
+.lines {
+    width: 200px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.count_test {
+    margin-left: auto;
+    text-decoration: none;
+    color: black;
+}
+
+.count_test:hover {
+    color: #493a05;
+}
+
+.main__text {
+    font-size: 30px;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+
+.count_lines {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.tests_lines {
+    margin-left: 10px;
+}
+
+.main__line {
+    color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.main__line__tests_lines {
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.main__line__count_lines {
+    margin-top: 0;
+    margin-right: 0;
+}
+
+.size1_line {
+    width: 100%;
+}
+
+.size2_line {
+    width: 50%;
+}
+
+.size3_line {
+    width: 70%;
+}
+
+/*************************************/
+
+.main__section__info_inner {
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*----------главный текст--------*/
+
+.main__info__item {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_description {
+    width: 70%;
+    font-size: 20px;
+}
+
+.main__button {
+    background: #9200B6;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 7px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    box-shadow: 5px 5px black;
+}
+
+.main__button:hover {
+    background: #50006C;
+}
+
+/*************************************/
+
+/*----------главная картинка--------*/
+
+.main__picture {
+    width: 50%;
+}
+
+.main__ico {
+    width: 350px;
+    border-radius: 30px;
+    box-shadow: 5px 5px black;
+}
+
+/*************************************/
+
+/*------------доп текст------------*/
+
+.sub_info_text {
+    width: 70%;
+    text-align: right;
+}
+
+.main__list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.main__list_item {
+    font-family: sans-serif;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 55px;
+}
+
+.main__list_item:nth-child(1) {
+    background-image: url('/images/number-svgrepo-com.svg');
+    background-size: 50px;
+}
+
+.main__list_item:nth-child(2) {
+    background-image: url('/images/number1-svgrepo-com.svg');
+    background-size: 50px;
+}
+
+.main__list_item:nth-child(3) {
+    background-image: url('/images/number2-svgrepo-com.svg');
+    background-size: 50px;
+}
+
+.main__list_item:nth-child(4) {
+    background-image: url('/images/number3-svgrepo-com.svg');
+    background-size: 50px;
+}
+
+.main__list_item:nth-child(5) {
+    background-image: url('/images/number4-svgrepo-com.svg');
+    background-size: 50px;
+}
+
+.info__list_container {
+    padding: 25px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 5px 5px black;
+    display: flex;
+    justify-content: center;
+}
+
+.sub_info_text {
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 5px;
+    width: 100%;
+}
+
+.right {
+    width: 80%;
+}

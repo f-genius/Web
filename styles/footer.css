@@ -1,0 +1,31 @@
+.footer {
+    margin-top: 200px;
+}
+
+.footer_links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__line {
+    width: 20%;
+}
+
+.footer_social_media_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_logo_pic {
+    width: 50px;
+    margin: 10px;
+}
+
+.footer__text {
+    font-size: 25px;
+    font-family: sans-serif;
+}

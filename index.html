@@ -7,172 +7,127 @@
     <meta
         name = "description"
         content = "Вас ждут различные тематические тесты: образовательные, психологические,
-        развлекательные, тесты на IQ и многие другие. Испытайте себя!" />
-    <title>Quizzical</title>
-    <style>
-        .ascii-pic {
-            width: 40%;
-            margin-top: 35px;
-            margin-left: 100px;
-            align-items: center;
-            float: left;
-        }
-        .ascii-text {
-            margin-left: 40px;
-            width: 40%;
-            padding-top: 60px;
-            top: 40px;
-            float: left;
-            text-align: justify;
-        }
-        .statistics {
-            text-align: right;
-            margin-right: 20px;
-        }
-        .central_info {
-            display: flex;
-            margin-bottom: 200px;
-        }
-        .more_description {
-            border-style: dashed;
-            display: flex;
-            height: 200px;
-            width: 100%;
-            align-items: center;
-        }
-        .list-advantages {
-            width: 40%;
-            float: left;
-            padding-left: 200px;
-            margin-right: -10px;
-            font-size: larger;
-        }
-        .detailed_description {
-            width: 60%;
-            float: left;
-            margin-left: -100px;
-            margin-right: 200px;
-            display: flex;
-            text-align: right;
-        }
-        .links {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            width: 100%;
-        }
-        footer {
-            display: flex;
-            height: 100px;
-            align-items: center;
-            text-align: center;
-        }
-
-    </style>
+                   развлекательные, тесты на IQ и многие другие. Испытайте себя!" />
+    <title>qu:zz:cal</title>
 </head>
-
 <body>
     <header class="header">
-        <div class="container">
-            <nav class="menu">
-                <ul class="menu_list">
-                    <li class="menu_item">
-                        <a rel="menu_btn" href="index.html">Главная</a>
-                    </li>
-                    <li class="menu_item">
-                        <a rel="menu_btn" href="#">Психология</a>
-                    </li>
-                    <li class="menu_item">
-                        <a rel="menu_btn" href="#">IQ</a>
-                    </li>
-                    <li class="menu_item">
-                        <a rel="menu_btn" href="#">Образовательные</a>
-                    </li>
-                    <li class="menu_item">
-                        <a rel="menu_btn" href="#">Развлекательные</a>
-                    </li>
-                </ul>
-            </nav>
+        <div class="header__inner header__inner_left">
+            <a href="" class="menu header__menu">
+                <img src="images/apps-svgrepo-com.svg" alt="" class="header__pic header__pic_menu">
+            </a>
+        </div>
+
+        <div class="header__inner header__inner_left">
+            <img src="images/bachelor-hat-svgrepo-com.svg" alt="" class="header__pic header__pic_logo">
+        </div>
+
+        <div class="header__inner_ header__inner_left header__inner_left_valign">
+            <a href="" class="name header__name_link">qu:zz:cal</a>
+        </div>
+
+
+        <div class="header__inner header__inner_right">
+            <form class="header__search" action="#" method="get">
+                <button type="submit" class="header__search_item button"><img src="images/arrow.png" class="header__pic header__pic_button" alt=""></button>
+                <input placeholder="Поиск..." type="text" class="header__search_item input">
+            </form>
         </div>
     </header>
 
-    <main style="height: 1000px; ">
+    <main class="main">
+        <div class="main__inner top_item">
+            <nav class="main__navigation">
+                <a href="#" class="main__theme_list_item">#интеллект</a>
+                <a href="#" class="main__theme_list_item">#математика</a>
+                <a href="#" class="main__theme_list_item">#программирование</a>
+                <a href="#" class="main__theme_list_item">#iq</a>
+                <a href="#" class="main__theme_list_item">#психология</a>
+                <a href="#" class="main__theme_list_item">#развлечения</a>
+                <a href="#" class="main__theme_list_item">#сериалы</a>
+                <a href="#" class="main__theme_list_item">#книги</a>
+            </nav>
+        </div>
 
-        <section class="header">
-            <h1 style="text-align: center">Online тесты</h1>
-            <aside class="statistics">
-                <a href="#">Тестов: 0</a>
-            </aside>
-        </section>
+        <section class="main__section main__statistics">
+            <div class="main__inner lines tests_lines">
+                <p class="main__text text_test">#тесты</p>
+                <hr class="main__line main__line__tests_lines size1_line">
+                <hr class="main__line main__line__tests_lines size2_line">
+                <hr class="main__line main__line__tests_lines size3_line">
+            </div>
 
-        <section class="central_info">
-            <pre class="ascii-pic">
-            ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-            ⣿⣿⣿⣿⣿⣿⠿⠛⠋⠉⠉⠉⠉⠛⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠉⠉⠉⠉⠉⠉⠉⠉⣿
-            ⣿⣿⣿⡿⠋⠀⠀⢀⣠⣤⣤⣤⣤⣀⠀⠀ ⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⣀⣴⣾⡇⠀⠀⣿
-            ⣿⣿⠋⠀⠀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣦⡀⠀ ⠈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣿⣿⠀⠀⠈⠛⠿⠇⠀⠀⣿
-            ⣿⠇⠀⢀⣾⣿⠿⠿⠀⠀⣿⠃⠀⠸⠿⢿⣿⡄⠀⠀ ⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣤⣤⣤⣤⣤⣤⣤⣤⣿
-            ⣿⠀⠀⢸⣿⡇⠀⠀⠊⠀⣿⠀⠠⠂⠀⠀⣿⣿⡀⠀ ⠸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-            ⣿⠀⠀⢸⣿⡟⠀⠴⠀⠀⣿⠀⠀⠀⠂⠚⣿⣿⠇⠀ ⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-            ⣿⠀⠀⠸⣿⣇⡀⢀⠐⠀⣿⠀⠑⢂⠀⣠⣷⡟⠀⠀ ⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-            ⣿⣧⠀⠀⠙⢿⣿⣿⣄⣠⣿⣦⣀⣼⣿⣿⠟⠁⠀⣠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-            ⣿⣿⣷⣄⠀⠀⠙⠻⢿⣿⣿⣿⣿⠿⠛⠁⠀⢀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠛⠻⣿⣿⠟⢿⣿
-            ⣿⣿⣿⣿⣷⣤⣀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠋⠀⠀⠀⠘⠓⠀⠀ ⣿
-            ⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⠶⢶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣶⣶⣶⣶⣶⣶⣿
-            ⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-            ⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-            ⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠛⠉⠉⠉⠙⠻⣿⣿
-            ⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏⠀⠀⠀⠀⡧⢀⠀ ⠘⣿
-            ⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⡇⠀⠀⠀ ⣿
-            ⣿⣿⣿⣿⣿⣿⣿⣿⣿⠛⠛⠛⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⣊⡩⠃⠀⠀ ⣠⣿
-            ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣤⣤⣤⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣤⣀⣀⣀⣤⣾⣿⣿
-            ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-        </pre>
-            <div class="ascii-text">
-                <h3 style="text-align: center">Проверь себя!</h3>
-                <p>На нашем ресурсе собраны все популярные психологические тесты, которые расскажут о ваших способностях,
-                    недостатках и особенностях личности. <b>Мы постоянно проверяем и улучшаем качество</b> тестов, чтобы они соответствовали современным требованиям к психологическим
-                методикам и образовательным тестам. Вы можете протестировать уровень IQ вашего ребенка с помощью иллюстрированного теста, или провести комплексный анализ
-                рисунков всех домочадцев и узнать об их потаенных страхах и проблемах. А с помощью образовательных тестов вы сможете определить и улучшить свой уровень знаний
-                в различных сферах. Процесс тестирования на мобильном или компьютере так же удобен, как через приложение.</p>
+            <div class="main__inner lines count_lines">
+                <a href="#" class="main__text count_test">#1466</a>
+                <hr class="main__line main__line__count_lines size3_line">
+                <hr class="main__line main__line__count_lines size2_line">
+                <hr class="main__line main__line__count_lines size1_line">
             </div>
         </section>
 
-        <section class="more_description">
-            <div class="list-advantages">
-                <ol>
-                    <li>
-                        Без регистрации
-                    </li>
-                    <li>
-                        Большой выбор тем
-                    </li>
-                    <li>
-                        Множество интересных фактов
-                    </li>
-                    <li>
-                        Для любых возрастов
-                    </li>
-                    <li>
-                        Польза - в каждом тесте!
-                    </li>
-                </ol>
+        <section class="main__section main__info_pic">
+            <div class="main__section__info_inner">
+                <h1 class="main__info__item  main_text_header">Проверь себя!</h1>
+                <p class="main__info__item main_description">
+                    На нашем ресурсе собраны все популярные психологические тесты,
+                    которые расскажут о ваших способностях, недостатках и особенностях личности.
+                    Мы постоянно проверяем и улучшаем качество тестов, чтобы они соответствовали
+                    современным требованиям к психологическим методикам и образовательным тестам.
+                </p>
+                <a href="#" class="main__info__item main__button">Вперёд</a>
             </div>
-            <div class="detailed_description">
-                Всегда интересно узнать степень собственной эрудированности. Разнообразные тесты онлайн помогут объективно оценить уровень
-                познаний в самых различных областях. Сайт с опросами на разные темы — это отличная возможность провести время с пользой,
-                проверить кругозор и узнать новые факты об окружающем мире.
 
-                Любые опросники направлены на проверку знаний, психики или физического здоровья.
-                Чтобы с легкостью поддержать беседу и блеснуть эрудицией просто необходимо периодически проходить всякие тестирования.
-                На сайте собраны разнообразные тематические тесты, которые можно пройти совершенно бесплатно и без регистрации.
+            <div class="main__section__info_inner">
+                <img src="images/main-ico.png" alt="" class="main__ico">
+            </div>
+        </section>
+
+
+        <section class="main__section main__sub_info">
+
+            <div class="main__section__info_inner info__list">
+                <div class="info__list_container left">
+                    <ul class="main__list">
+                        <li class="main__list_item">Без регистрации</li>
+                        <li class="main__list_item">Большой выбор тем</li>
+                        <li class="main__list_item">Множество интересных фактов</li>
+                        <li class="main__list_item">Для любых возрастов</li>
+                        <li class="main__list_item">Польза - в каждом тесте!</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="main__section__info_inner">
+                <div class="info__list_container right">
+                    <p class="sub_info_text">
+                        Всегда интересно узнать степень собственной эрудированности.
+                        Разнообразные тесты онлайн помогут объективно оценить уровень познаний
+                        в самых различных областях. Сайт с опросами на разные темы — это отличная
+                        возможность провести время с пользой,проверить кругозор и узнать новые
+                        факты об окружающем мире.Любые опросники направлены на проверку знаний,
+                        психики или физического здоровья.Чтобы с легкостью поддержать беседу и
+                        блеснуть эрудицией просто необходимо периодически проходить всякие
+                        тестирования.На сайте собраны разнообразные тематические тесты, которые
+                        можно пройти совершенно бесплатно и без регистрации.
+                    </p>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="links">
-            <a href="https://vk.com/l_shev" target="_blank">ВКонтакте</a>
-            <a href="https://t.me/kiyikmyy" target="_blank">Telegram</a>
+
+    <footer class="footer">
+        <div class="footer_links">
+            <div class="footer__text">
+                Контакты
+            </div>
+
+            <hr class="footer__line main__line">
+            <nav class="footer_social_media_links">
+                <a href="https://vk.com/l_shev" target="_blank" class="vk"><img class="footer_logo_pic" src="images/vk.svg" alt=""></a>
+                <a href="https://t.me/kiyikmyy" target="_blank" class="tg"><img class="footer_logo_pic" src="images/telegram.svg" alt=""></a>
+                <a href="" class="inst"><img class="footer_logo_pic" src="images/instagram.svg" alt=""></a>
+                <a href="" class="fb"><img class="footer_logo_pic" src="images/facebook.svg" alt=""></a>
+            </nav>
         </div>
     </footer>
 </body>
