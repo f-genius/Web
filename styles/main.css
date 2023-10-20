@@ -3,15 +3,16 @@ body {
             to bottom,
             rgba(255,232,157,1),
             rgba(255,235,166,1),
-            rgba(255,255,255,1))
-            fixed;
+            rgba(255,255,255,1));
+    width: 100%;
 }
 
 .main {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 3px;
+    justify-content: center;
+    padding-top: 13vh;
 }
 
 .main__inner {
@@ -44,7 +45,7 @@ body {
 .main__section {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 /*************************************/
@@ -81,11 +82,11 @@ body {
 
 .count_lines {
     margin-left: auto;
-    margin-right: 10px;
+    margin-right: 1%;
 }
 
 .tests_lines {
-    margin-left: 10px;
+    margin-left: 1%;
 }
 
 .main__line {
@@ -120,7 +121,7 @@ body {
 
 .main__section__info_inner {
     width: 50%;
-    height: 500px;
+    height: 65vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -137,6 +138,7 @@ body {
 }
 
 .main_description {
+    text-align: center;
     width: 70%;
     font-size: 20px;
 }
@@ -147,8 +149,8 @@ body {
     cursor: pointer;
     text-decoration: none;
     border-radius: 7px;
-    width: 200px;
-    height: 50px;
+    width: 30%;
+    height: 10%;
     font-size: 20px;
     box-shadow: 5px 5px black;
 }
@@ -166,7 +168,7 @@ body {
 }
 
 .main__ico {
-    width: 350px;
+    width: 50%;
     border-radius: 30px;
     box-shadow: 5px 5px black;
 }
@@ -239,4 +241,31 @@ body {
 
 .right {
     width: 80%;
+}
+
+.grid {
+    margin-top: 10%;
+    justify-content: center;
+}
+
+.grid_container {
+    width: 80vw;
+    border: 3px solid purple;
+}
+
+th, td {
+    text-align: center;
+    border: 3px solid purple;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #d966f6;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #9200B6;
+}
+
+thead {
+    background-color: white;
 }

@@ -1,5 +1,5 @@
 .footer {
-    margin-top: 200px;
+    margin-top: 15vh;
 }
 
 .footer_links {
@@ -22,7 +22,7 @@
 
 .footer_logo_pic {
     width: 50px;
-    margin: 10px;
+    margin: 1vh;
 }
 
 .footer__text {
