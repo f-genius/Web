@@ -1,6 +1,6 @@
 .header {
     background: #FEC600;
-    width: 100vw;
+    width: 99vw;
     height: 13vh;
     display: flex;
     align-items: center;
@@ -75,3 +75,36 @@
     align-items: center;
 }
 
+.header__dropdown_menu {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #f1f1f1;
+    box-shadow: 3px 3px black;
+    font-size: min(3vh, 3vw);
+}
+
+.dropdown_menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: "Modern No. 20", monospace;
+}
+
+.dropdown_menu a:hover {
+    background-color: #e697fa;
+}
+
+.header__dropdown_menu:hover .dropdown_menu {
+    display: block;
+}
+
+.active {
+    background-color: #9200B6;
+}

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <link rel="icon" href="images/bachelor-hat-svgrepo-com.svg" type="image/x-icon"/>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="styles/index_style.css"/>
+    <script src="scripts/header.js"></script>
     <meta
         name = "description"
         content = "Вас ждут различные тематические тесты: образовательные, психологические,
@@ -13,10 +14,22 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__inner header__inner_left">
+        <div class="header__inner header__inner_left header__dropdown_menu">
             <a href="" class="menu header__menu">
                 <img src="images/apps-svgrepo-com.svg" alt="" class="header__pic header__pic_menu">
             </a>
+            <div id="id456" class="header__inner_menu dropdown_menu">
+                <a href="index.html" class="menu__item active">Главная</a>
+                <a href="topics_list.html" class="menu__item">Каталог</a>
+                <a href="intelligence.html" class="menu__item">Интеллект</a>
+                <a href="math.html" class="menu__item">Математика</a>
+                <a href="programming.html" class="menu__item">Программирование</a>
+                <a href="iq.html" class="menu__item">IQ</a>
+                <a href="psychology.html" class="menu__item">Психология</a>
+                <a href="entertainment.html" class="menu__item">Развлечения</a>
+                <a href="series.html" class="menu__item">Сериалы</a>
+                <a href="books.html" class="menu__item">Книги</a>
+            </div>
         </div>
 
         <div class="header__inner header__inner_left">
@@ -24,7 +37,7 @@
         </div>
 
         <div class="header__inner_ header__inner_left header__inner_left_name">
-            <a href="" class="name header__name_link">qu:zz:cal</a>
+            <a href="topics_list.html" class="name header__name_link">qu:zz:cal</a>
         </div>
 
 
@@ -39,14 +52,14 @@
     <main class="main">
         <div class="main__inner top_item">
             <nav class="main__navigation">
-                <a href="#" class="main__theme_list_item">#интеллект</a>
-                <a href="#" class="main__theme_list_item">#математика</a>
-                <a href="#" class="main__theme_list_item">#программирование</a>
-                <a href="#" class="main__theme_list_item">#iq</a>
-                <a href="#" class="main__theme_list_item">#психология</a>
-                <a href="#" class="main__theme_list_item">#развлечения</a>
-                <a href="#" class="main__theme_list_item">#сериалы</a>
-                <a href="#" class="main__theme_list_item">#книги</a>
+                <a href="intelligence.html" class="main__theme_list_item">#интеллект</a>
+                <a href="math.html" class="main__theme_list_item">#математика</a>
+                <a href="programming.html" class="main__theme_list_item">#программирование</a>
+                <a href="iq.html" class="main__theme_list_item">#iq</a>
+                <a href="psychology.html" class="main__theme_list_item">#психология</a>
+                <a href="entertainment.html" class="main__theme_list_item">#развлечения</a>
+                <a href="series.html" class="main__theme_list_item">#сериалы</a>
+                <a href="books.html" class="main__theme_list_item">#книги</a>
             </nav>
         </div>
 
@@ -75,7 +88,7 @@
                     Мы постоянно проверяем и улучшаем качество тестов, чтобы они соответствовали
                     современным требованиям к психологическим методикам и образовательным тестам.
                 </p>
-                <a href="#" class="main__info__item main__button">Вперёд</a>
+                <a href="topics_list.html" class="main__info__item main__button">Вперёд</a>
             </div>
 
             <div class="main__section__info_inner info_inner_pic">
@@ -158,6 +171,9 @@
                 <a href="" class="inst"><img class="footer_logo_pic" src="images/instagram.svg" alt=""></a>
                 <a href="" class="fb"><img class="footer_logo_pic" src="images/facebook.svg" alt=""></a>
             </nav>
+        </div>
+        <div class="footer__load_stat">
+            <p id="id345" class="footer__time">Page load time in JS: </p>
         </div>
     </footer>
 </body>

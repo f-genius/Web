@@ -4,7 +4,11 @@ body {
             rgba(255,232,157,1),
             rgba(255,235,166,1),
             rgba(255,255,255,1));
-    width: 100%;
+    width: 99vw;
+}
+
+::-webkit-scrollbar {
+    width: 0;
 }
 
 .main {

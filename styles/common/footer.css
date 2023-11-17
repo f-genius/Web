@@ -1,5 +1,6 @@
 .footer {
     margin-top: 15vh;
+    width: 100%;
 }
 
 .footer_links {
@@ -11,6 +12,9 @@
 
 .footer__line {
     width: 20%;
+    color: black;
+    border-width: 1px;
+    border-style: solid;
 }
 
 .footer_social_media_links {
@@ -28,4 +32,9 @@
 .footer__text {
     font-size: 25px;
     font-family: sans-serif;
+}
+
+.footer__time {
+    font-family: monospace;
+    font-size: 1.5vw;
 }
