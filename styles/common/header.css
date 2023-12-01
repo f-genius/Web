@@ -1,11 +1,12 @@
 .header {
     background: #FEC600;
     width: 99vw;
-    height: 13vh;
+    height: 10vh;
     display: flex;
     align-items: center;
     border-radius: 15px;
     position: fixed;
+    z-index: 5;
 }
 
 .header__inner {

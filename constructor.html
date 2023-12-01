@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <link rel="icon" href="images/bachelor-hat-svgrepo-com.svg" type="image/x-icon"/>
-    <link rel="stylesheet" href="styles/intell_style.css"/>
+    <link rel="stylesheet" href="styles/constructor.css"/>
     <script src="scripts/header.js"></script>
     <meta
             name = "description"
@@ -12,7 +12,7 @@
                    развлекательные, тесты на IQ и многие другие. Испытайте себя!" />
     <title>qu:zz:cal</title>
 </head>
-<body >
+<body>
     <header class="header">
         <div class="header__inner header__inner_left header__dropdown_menu">
             <a href="" class="menu header__menu">
@@ -21,6 +21,7 @@
             <div id="id456" class="header__inner_menu dropdown_menu">
                 <a href="index.html" class="menu__item active">Главная</a>
                 <a href="topics_list.html" class="menu__item">Каталог</a>
+                <a href="constructor.html">Регистрация</a>
                 <a href="intelligence.html" class="menu__item">Интеллект</a>
                 <a href="math.html" class="menu__item">Математика</a>
                 <a href="programming.html" class="menu__item">Программирование</a>
@@ -39,18 +40,26 @@
         <div class="header__inner_ header__inner_left header__inner_left_name">
             <a href="topics_list.html" class="name header__name_link">qu:zz:cal</a>
         </div>
-
-
-        <div class="header__inner header__inner_right">
-            <form class="header__search" action="#" method="get">
-                <button type="submit" class="header__search_item button"><img src="images/arrow.png" class="header__pic header__pic_button" alt=""></button>
-                <input placeholder="Поиск..." type="text" class="header__search_item input">
-            </form>
-        </div>
     </header>
 
-    <main class="main">
-
+    <main id="main_id" class="main">
+        <div class="container">
+            <form action="" method="POST" onsubmit="saveData()">
+                <div id="formfield">
+                    <input type="text" name="text" class="text" size="50" placeholder="Фамилия Имя участника" required>
+                </div>
+                <input name="submit" type="Submit" value="Submit">
+            </form>
+            <div class="controls">
+                <button class="add" onclick="add()">Add</button>
+                <button class="remove" onclick="remove()">Remove</button>
+            </div>
+        </div>
+        <div class="main__users_list">
+            Список зарегистрированных участников:
+            <ol id="users__list"></ol>
+        </div>
+        <script src="scripts/constructor.js"></script>
     </main>
 
     <footer class="footer">
