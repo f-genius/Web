@@ -1,0 +1,52 @@
+.swiper-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    width: 50%;
+    background-color: #fffaee;
+    border-radius: 15px;
+    box-shadow: 5px 5px 2px black;
+    height: auto;
+}
+
+.images__container {
+    padding-top: 40px;
+    height: 70%;
+}
+
+img {
+    width: 80%;
+    max-width: 500px;
+    height: 100%;
+    border-radius: 15px;
+}
+
+a {
+    color: black;
+    font-family: monospace;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #dca003;
+}
+
+h3 {
+    font-size: 1.5vw;
+}
+
+.paginat {
+    font-family: "Bradley Hand ITC", monospace;
+    font-size: 2vw;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    color: #9200B6;
+}

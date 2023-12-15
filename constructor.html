@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <link rel="icon" href="images/bachelor-hat-svgrepo-com.svg" type="image/x-icon"/>
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css"
+    />
     <link rel="stylesheet" href="styles/constructor.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
     <script src="scripts/header.js"></script>
     <meta
             name = "description"
@@ -44,9 +49,9 @@
 
     <main id="main_id" class="main">
         <div class="container">
-            <form action="" method="POST" onsubmit="saveData()">
+            <form id="participantsForm" action="" method="POST" onsubmit="check()">
                 <div id="formfield">
-                    <input type="text" name="text" class="text" size="50" placeholder="Фамилия Имя участника" required>
+                    <input type="text" name="text" class="text" size="50" placeholder="Фамилия Имя участника">
                 </div>
                 <input name="submit" type="Submit" value="Submit">
             </form>
@@ -59,7 +64,7 @@
             Список зарегистрированных участников:
             <ol id="users__list"></ol>
         </div>
-        <script src="scripts/constructor.js"></script>
+        <script src="scripts/registration.js"></script>
     </main>
 
     <footer class="footer">

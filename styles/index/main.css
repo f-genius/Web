@@ -273,3 +273,62 @@ tbody tr:nth-child(even) {
 thead {
     background-color: white;
 }
+
+@keyframes go-left-right {
+    from { left: 0; }
+    to { left: calc(100% - 5vw); }
+}
+
+.preloader__box {
+    animation: go-left-right 1s infinite alternate;
+    position: relative;
+    border: 2px solid #990ccb;
+    border-radius: 5px;
+    width: 50px;
+    height: 20px;
+    background: #990ccb;
+}
+
+.main__comments_header {
+    font-family: monospace;
+    font-size: 7vh;
+}
+
+
+.load__container {
+    margin-top: 20vh;
+}
+
+.main__statistics {
+    width: 100%;
+    display: block;
+    justify-content: center;
+}
+
+.main__comments {
+    display: flex;
+    justify-content: center;
+}
+
+.comments_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.comment-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: black solid;
+    background-color: white;
+    margin: 10px;
+    font-family: monospace;
+    font-size: 3vh;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.comment-name {
+    margin-bottom: 5px;
+}

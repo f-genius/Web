@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <link rel="icon" href="images/bachelor-hat-svgrepo-com.svg" type="image/x-icon"/>
-    <link rel="stylesheet" href="styles/intell_style.css"/>
     <script src="scripts/header.js"></script>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="styles/intell_style.css"/>
     <meta
             name = "description"
             content = "Вас ждут различные тематические тесты: образовательные, психологические,
@@ -51,7 +57,49 @@
 </header>
 
 <main class="main">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="images__container">
+                    <img src="images/book1.jpg" alt="Image 1">
+                </div>
+                <a href="#">
+                    <h3>Тварь Вы дрожащая или право имеете? <br>Тест по книге "Преступление и наказание"
+                    </h3>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <div class="images__container">
+                    <img src="images/book2.jpg" alt="Image 1">
+                </div>
+                <a href="#">
+                    <h3>От орка до эльфа: насколько хорошо Вы знаете вселенную Властелина колец?</h3>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <div class="images__container">
+                    <img src="images/test3.webp" alt="Image 1">
+                </div>
+                <a href="#">
+                    <h3>Насколько хорошо Вы знаете кошек мировой литературы?</h3>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <div class="images__container">
+                    <img src="images/test4.jpg" alt="Image 1">
+                </div>
+                <a href="#">
+                    <h3>Тест на знание романа "Граф Монте-Кристо"</h3>
+                </a>
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination paginat"></div>
+    </div>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
 </main>
 
 <footer class="footer">

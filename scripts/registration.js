@@ -5,7 +5,7 @@ function add(){
     newField.setAttribute('type','text');
     newField.setAttribute('name','text');
     newField.setAttribute('class','text');
-    newField.setAttribute('siz',50);
+    newField.setAttribute('size',50);
     newField.setAttribute('placeholder','Фамилия Имя участника');
     formfield.appendChild(newField);
 }
@@ -19,12 +19,12 @@ function remove(){
 
 function saveData() {
     var elements = document.getElementsByClassName("text");
-    console.log(elements)
+    // console.log(elements)
     var dataArray = []
     for (var i = 0; i < elements.length; i++) {
         dataArray.push(elements[i].value)
     }
-    console.log(dataArray)
+    // console.log(dataArray)
     localStorage.setItem('userData', JSON.stringify(dataArray))
     displayList();
 }
@@ -40,4 +40,39 @@ function displayList() {
         dataList.appendChild(listItem);
     });
     event.preventDefault();
+}
+
+iziToast.settings({
+    timeout: 2000,
+    resetOnHover: true,
+    transitionIn: 'flipInX',
+    transitionOut: 'flipOutX',
+    position: 'topCenter',
+});
+
+function check() {
+    const inputs = formfield.getElementsByTagName('input');
+    console.log(inputs)
+    let allFieldsFilled = true;
+
+    for (let input of inputs) {
+        console.log(input.value)
+        if (input.value === "") {
+            allFieldsFilled = false;
+            break;
+        }
+    }
+
+    if (allFieldsFilled) {
+        iziToast.success({
+            title: 'OK',
+            message: 'Все поля заполнены',
+        });
+    } else {
+        iziToast.warning({
+            title: 'CAUTION',
+            message: 'Не все поля заполнены! Пожалуйста, заполните все поля.',
+        });
+    }
+    saveData();
 }

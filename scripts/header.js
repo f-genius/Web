@@ -2,12 +2,12 @@ const startTime = performance.now();
 
 window.onload = function (){
     let linksContainer = document.getElementById("id456");
-    console.log("links", linksContainer)
+    // console.log("links", linksContainer)
 
     let links = linksContainer.getElementsByTagName('a');
-    console.log(links)
+    // console.log(links)
     let url = document.location.href;
-    console.log(url)
+    // console.log(url)
 
     let current = document.getElementsByClassName("active");
     current[0].className = current[0].className.replace(" active", "");
@@ -19,9 +19,9 @@ window.onload = function (){
         }
 
     const resTime = performance.now() - startTime;
-    console.log(resTime)
+    // console.log(resTime)
     let elem = document.getElementById("id345")
-    console.log(elem)
+    // console.log(elem)
     elem.innerHTML = "Page load time in JS: " + (resTime / 1000).toFixed(4) + " seconds";
 }
 }

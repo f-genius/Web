@@ -6,6 +6,7 @@
     <link rel="icon" href="images/bachelor-hat-svgrepo-com.svg" type="image/x-icon"/>
     <link rel="stylesheet" href="styles/index_style.css"/>
     <script src="scripts/header.js"></script>
+    <script src="scripts/loader.js"></script>
     <meta
         name = "description"
         content = "Вас ждут различные тематические тесты: образовательные, психологические,
@@ -129,33 +130,22 @@
             </div>
         </section>
 
-        <section class="main__section grid">
-            <table class="grid_container">
-                <thead>
-                    <tr>
-                        <th scope="col">header1</th>
-                        <th scope="col">header2</th>
-                        <th scope="col">header3</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">row1</th>
-                        <td>item11</td>
-                        <td>item12</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">row2</th>
-                        <td>item21</td>
-                        <td>item22</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">row3</th>
-                        <td>item31</td>
-                        <td>item32</td>
-                    </tr>
-                </tbody>
-            </table>
+        <section class="main__comments">
+            <div id="main__statistics" class="main__statistics">
+                <div class="load__container">
+                    <h2 class="main__comments_header main_text_header">Отзывы</h2>
+
+                    <div id="preloader" class="preloader">
+                        <div class="preloader__box"></div>
+                    </div>
+
+                    <script>
+                        window.addEventListener('load', function() {
+                            getCom()
+                        });
+                    </script>
+                </div>
+            </div>
         </section>
     </main>
 
